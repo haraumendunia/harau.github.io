@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+div.menu-icon>img{
+    height: 128px;
+    width: 128px;
+}
+
+.menu-android{
+    padding-top: 5px;
+}
+
+p{
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.jumbotron{
+    background-image: url("../images/Lembah_Harau_1290.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    font-family: Oswald, sans-serif;
+}
+h1>span>small{
+    color:white;
+}
+
+div#text-header{
+    position: relative;
+}
+
+div#text-header>h1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(20%);
+}
+
+footer>div{
+    background-color: #ececec;
+    line-height: 3.5em;
+}
