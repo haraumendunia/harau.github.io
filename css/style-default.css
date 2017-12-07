@@ -2,98 +2,119 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-div.menu-icon>img{
-    height: 128px;
-    width: 128px;
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #0066ff;
+    color: #fff;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
 }
 
-.menu-android{
-    padding-top: 5px;
+.navbar-brand{
+    float: left;
+    min-height: 55px;
+    padding: 0 15px;
 }
 
-p{
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
+.navbar-inverse .navbar-nav li.active a, .navbar-inverse .navbar-nav li.active a:focus, .navbar-inverse .navbar-nav li.active a:hover {
+    color: #fff !important;
+    background-color: #0066ff !important;
 }
 
-.jumbotron{
-    background-image: url("../images/Lembah_Harau_1290.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: auto;
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #dddddd
+}
+
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    background-color: #0066FF;
+    border-color: #0066FF;
+}
+
+.carousel-inner img{
     width: 100%;
-    color: white;
-    text-shadow: black 0.3em 0.3em 0.3em;
-    font-family: Oswald, sans-serif;
-}
-h1>span>small{
-    color:white;
+    margin: auto;
 }
 
-div#text-header{
-    position: relative;
-}
-
-div#text-header>h1{
-    position: absolute;
+.carousel-caption{
     top: 50%;
-    transform: translateY(20%);
+    transform: translateY(-50%);
+}
+
+#menu-container{
+    margin-top: 5px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 footer>div{
     background-color: #ececec;
     line-height: 3.5em;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
 }
 
-article{
-    max-width: 90%;
-    margin: 0 auto;
+article > div.panel{
+    margin: 4% 2%;
+}
+
+article > div.panel > div.panel-heading > h2{
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+article > div.panel > div.panel-body > div.container > div.row > div > ul > li{
+    list-style: none;
+    background: #E8FFFF;
+    border-right: 5px solid #2F54FF;
+    border-bottom: 2px solid #9FFFB7;
+    margin: 2px auto 3px -40px;
+    padding-left: 5px;
+}
+
+article > div.panel > div.panel-body > div.container > div.row > div > p{
+    list-style: none;
+    background: #E8FFFF;
+    border-right: 5px solid #2F54FF;
+    border-bottom: 2px solid #9FFFB7;
+    margin: 2px auto 3px auto;
+    padding-left: 5px;
+}
+
+div#accordion{
+    margin-top: 5px;
+}
+div#accordion > div.panel > div.panel-heading > h3 > a{
+    text-decoration: none;
+}
+
+div#accordion > div.panel > div#collapseOne > div.panel-body{
+    padding: 1px 0 1px 0px;
+}
+
+div#accordion > div.panel > div#collapseTwo > div.panel-body{
+    padding: 1px 0 1px 0px;
+}
+
+div#accordion > div.panel > div#collapseThree > div.panel-body{
+    padding: 1px 0 1px 0px;
+}
+
+div#accordion > div.panelstakeholders > div > div.panel-body > div.stakeholders{
+    padding: 1px 0px 1px 5px;
+    margin: 3px;
+    border: 1px solid #0066FF;
 }
 
 .vcenter{
     display: flex;
     align-items: center;
 }
-
-.panel-title{
-    font-size: 2em;
-}
-
-.panel-body li{
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5em;
-}
-
-/*
-.article{
-    display: block;
-    box-sizing: border-box;
-    border-radius: 3px;
-    text-align: left;
-    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
-    border: 1px solid #cfcfcf;
-    overflow: hidden;
-    background-color: #fff;
-    max-width: 90%;
-    padding: 0px !important;
-}
-
-div.imagepost{
-    float: left;
-    width: 200px;
-    height: 300px;
-    display: block;
-    background-size: cover;
-    background-image: url("../images/IMG_4041.JPG");
-}
-
-div.textpost{
-    float:left;
-    box-sizing: border-box;
-    max-width: 90%;
-    padding: 30px;
-}
-*/

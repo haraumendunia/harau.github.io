@@ -1,33 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-<!--
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
--->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style-default.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style-default.css">
+</head>
 <body>
-    <header>
-        <div id="header" class="jumbotron">
-            <div class="container-fluid">
-                <div class="row">
-                    <div id="logo-limapuluhkota" class="col-sm-1">
-                        <img src="images/Lambang_Kabupaten_Lima_Puluh_Kota.png" id="logo-img">
-                    </div>
-                    <div id="text-header" class="col-sm-8 col-sm-offset-3">
-                        <h1>HARAU MENDUNIA
-                        <hr>
-                        <span><small>SubJudul</small></span>
-                        </h1>
-                    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#harauNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">
+                    <a href="#"><img src="images/navbrand.png" alt=""></a>
                 </div>
             </div>
+            <div id="harauNavbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Beranda</a></li>
+                    <li><a href="#">Tentang</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
-    <div id="container" class="container-fluid">
+    </nav>
+
+    <div id="harauCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#harauCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#harauCarousel" data-slide-to="1"></li>
+            <li data-target="#harauCarousel" data-slide-to="2"></li>
+            <li data-target="#harauCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="img-responsive center-block" src="images/carousel1.jpg">
+                <div class="carousel-caption">
+                    <h3>Lembah Harau Mendunia</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive center-block" src="images/carousel2.jpg">
+            </div>
+            <div class="item">
+                <img class="img-responsive center-block" src="images/carousel3.jpg">
+            </div>
+            <div class="item">
+                <img class="img-responsive center-block" src="images/carousel4.jpg">
+            </div>
+        </div> <!-- end carousel-inner -->
+
+        <!-- Start Kontrol Slider -->
+        <a class="left carousel-control" href="#harauCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#harauCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a><!-- End Kontrol Slider -->
+    </div> <!-- End slider -->
+
+    <!-- Menu Konten Harau Mendunia -->
+    <div id="menu-container" class="container-fluid text-center">
         <div class="row">
-            <div id="menu-permasalahan" class="col-xs-4 col-md-3 text-center">
+            <div id="menu-permasalahan" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
                     <a href="masalah.html">
                         <div class="menu-icon">
@@ -39,7 +81,7 @@
                     </a>
                 </div>
             </div>
-            <div id="menu-inovator" class="text-center col-xs-4 col-md-3">
+            <div id="menu-inovator" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
                     <a href="inovator.html">
                         <div class="menu-icon">
@@ -51,129 +93,161 @@
                     </a>
                 </div>
             </div>
-            <div id="menu-inovasi" class="text-center col-xs-4 col-md-3">
+            <div id="menu-inovasi" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
+                    <a href="inovasi.html">
                     <div class="menu-icon">
                         <img src="icons/inovasi.png" class="img-thumbnail">
                     </div>
                     <div class="menu-label">
                         <p>Inovasi</p>
                     </div>
+                    </a>
                 </div>
             </div>
-            <div id="menu-strategi" class="text-center col-xs-4 col-md-3">
+            <div id="menu-strategi" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
+                    <a href="strategi.html">
                     <div class="menu-icon">
                         <img src="icons/strategi.png" class="img-thumbnail">
                     </div>
                     <div class="menu-label">
                         <p>Strategi</p>
                     </div>
+                    </a>
                 </div>
             </div>
-            <div id="menu-stakeholders" class="text-center col-xs-4 col-md-3">
+            <div id="menu-stakeholders" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
+                    <a href="stakeholders.html">
                     <div class="menu-icon">
                         <img src="icons/stakeholders.png" class="img-thumbnail">
                     </div>
                     <div class="menu-label">
                         <p>Stakeholder</p>
                     </div>
+                    </a>
                 </div>
             </div>
-            <div id="menu-sumberdaya" class="text-center col-xs-4 col-md-3">
+            <div id="menu-sumberdaya" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
+                    <a href="sumberdaya.html">
                     <div class="menu-icon">
                         <img src="icons/sumberdaya.png" class="img-thumbnail">
                     </div>
                     <div class="menu-label">
                         <p>Sumberdaya</p>
                     </div>
+                    </a>
                 </div>
             </div>
-            <div id="menu-keluaran" class="text-center col-xs-4 col-md-3">
+            <div id="menu-keluaran" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
+                    <a href="keluaran.html">
                     <div class="menu-icon">
                         <img src="icons/keluaran.png" class="img-thumbnail">
                     </div>
                     <div class="menu-label">
                         <p>Output</p>
                     </div>
+                    </a>
                 </div>
             </div>
-            <div id="menu-sistem" class="text-center col-xs-4 col-md-3">
+            <div id="menu-sistem" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
+                    <a href="sistem.html">
                     <div class="menu-icon">
                         <img src="icons/sistem.png" class="img-thumbnail">
                     </div>
                     <div class="menu-label">
                         <p>Sistem</p>
                     </div>
+                    </a>
                 </div>
             </div>
-            <div id="menu-kendala" class="text-center col-xs-4 col-md-3">
+            <div id="menu-kendala" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
+                    <a href="kendala.html">
                     <div class="menu-icon">
                         <img src="icons/kendala.png" class="img-thumbnail">
                     </div>
                     <div class="menu-label">
                         <p>Kendala</p>
                     </div>
+                    </a>
                 </div>
             </div>
-            <div id="menu-manfaat" class="text-center col-xs-4 col-md-3">
+            <div id="menu-manfaat" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
+                    <a href="manfaat.html">
                     <div class="menu-icon">
                         <img src="icons/manfaat.png" class="img-thumbnail">
                     </div>
                     <div class="menu-label">
                         <p>Manfaat</p>
                     </div>
+                    </a>
                 </div>
             </div>
-            <div id="menu-perbedaan" class="text-center col-xs-4 col-md-3">
+            <div id="menu-perbedaan" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
+                    <a href="perbedaan.html">
                     <div class="menu-icon">
                         <img src="icons/perbedaan.png" class="img-thumbnail">
                     </div>
                     <div class="menu-label">
                         <p>Perbedaan</p>
                     </div>
+                    </a>
                 </div>
             </div>
-            <div id="menu-pembelajaran" class="text-center col-xs-4 col-md-3">
+            <div id="menu-pembelajaran" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
+                    <a href="pembelajaran.html">
                     <div class="menu-icon">
                         <img src="icons/pembelajaran.png" class="img-thumbnail">
                     </div>
                     <div class="menu-label">
                         <p>Pembelajaran</p>
                     </div>
+                    </a>
                 </div>
             </div>
-            <div id="menu-replikasi" class="text-center col-xs-4 col-md-3">
+            <div id="menu-replikasi" class="center-block col-xs-4 col-md-3">
                 <div class="menu-android">
+                    <a href="replikasi.html">
                     <div class="menu-icon">
                         <img src="icons/replikasi.png" class="img-thumbnail">
                     </div>
                     <div class="menu-label">
                         <p>Replikasi</p>
                     </div>
+                    </a>
+                </div>
+            </div>
+            <div id="menu-tautan" class="center-block col-xs-4 col-md-3">
+                <div class="menu-android">
+                    <a href="tautan.html">
+                    <div class="menu-icon">
+                        <img src="icons/file.png" class="img-thumbnail">
+                    </div>
+                    <div class="menu-label">
+                        <p>Video &amp; Tautan</p>
+                    </div>
+                    </a>
                 </div>
             </div>
 
         </div>
-    </div>
+    </div> <!-- end menu container -->
+    
     <footer>
         <div id="footer">
-            <p class="text-center">Inovator: Widya Putra, S.Sos, M.Si</p>   
+            <p class="text-center">Inovator: Widya Putra, S.Sos, M.Si - 2017</p>   
         </div>
-
     </footer>
-    <!--
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+</html>

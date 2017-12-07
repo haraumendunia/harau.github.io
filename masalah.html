@@ -2,28 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style-default.css">
 </head>
 <body>
-    <header>
-        <div id="header" class="jumbotron">
-            <div class="container-fluid">
-                <div class="row">
-                    <div id="logo-limapuluhkota" class="col-sm-1">
-                        <img src="images/Lambang_Kabupaten_Lima_Puluh_Kota.png" id="logo-img">
-                    </div>
-                    <div id="text-header" class="col-sm-8 col-sm-offset-3">
-                        <h1>HARAU MENDUNIA
-                        <hr>
-                        <span><small>SubJudul</small></span>
-                        </h1>
-                    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#harauNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">
+                    <a href="#"><img src="images/navbrand.png" alt=""></a>
                 </div>
             </div>
+            <div id="harauNavbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Beranda</a></li>
+                    <li><a href="#">Tentang</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
+
     <article>
         <div class="panel panel-success">
             <div class="panel-heading">
@@ -31,11 +36,12 @@
             </div>
             <div class="panel-body">
                 <div class="container">
-                    <div id="baris" class="row vcenter">
-                        <div id="panelimage" class="col-xs-4 col-sm-4 col-md-4">
-                            <img src="images/IMG_4041.JPG" alt="Sarasah Bunta Harau" class="img-responsive img-thumbnail">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/IMG_4041.JPG" alt="Sarasah Bunta Harau" class="img-responsive nopadding">
                         </div>
-                        <div class="col-xs-8 col-sm-8 col-md-8">
+                    <!-- start content -->
+                        <div class="col-sm-8 nopadding">
                             <ul>
                                 <li>Sinergi Pengembangan Kawasan Lembah Harau belum terlaksana secara optimal </li>
                                 <li>Pengembangan destinasi Lembah Harau sebagai daya tarik wisata berbasis Geowisata/Geoutourism belum terlaksana</li>
@@ -44,19 +50,19 @@
                                 <li>Promosi dalam pengembangan Lembah Harau sebagai Kawasan Wisata belum terkoordinasi dengan baik</li>
                                 <li>Penumbuhan industry pariwisata dan pemberdayaan potensi pelaku ekonomi kreatif dalam pengembangan Lembah Harau sebagai Kawasan Wisata belum terlaksana secara optimal</li>
                             </ul>
-                        </div>
+                        </div> 
+                    <!-- end content -->
                     </div>
-                </div>
-            </div>
-        </div>
+                </div> <!-- end container -->
+            </div> <!-- end panel-body -->
     </article>
 
     <footer>
         <div id="footer">
-            <p class="text-center">Inovator: Widya Putra, S.Sos, M.Si</p>   
+            <p class="text-center">Inovator: Widya Putra, S.Sos, M.Si - 2017</p>   
         </div>
-
     </footer>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
